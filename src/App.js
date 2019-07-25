@@ -4,16 +4,19 @@ import "./index.css";
 class App extends React.Component {
   state = {
     whosTurn: 'nought',
-    board: [null, null, null, null, null, null, null, null, null,]
+    board: [null, null, null, null, null, null, null, null, null]
   };
 
   render() {
     return (
-      <div className="container">
-        {this.state.board.map((square, i) => {
-          return <div key={i} className={`square${i} ${square}`} onClick={() => { if (!square) this.updateSquare(i) }} ></div>
-        })}
-      </div>
+      <>
+        <div className="container">
+          {this.state.board.map((square, i) => {
+            return <div key={i} className={`square${i} ${square}`} onClick={() => { if (!square) this.updateSquare(i) }} ></div>
+          })}
+        </div>
+        <button onClick={this.resetBoard}>Reset!</button>
+      </>
     );
   }
 
@@ -33,6 +36,8 @@ class App extends React.Component {
       }
     })
   }
-
+  resetBoard = () => {
+    this.setState({ board: [null, null, null, null, null, null, null, null, null] })
+  }
 }
 export default App;
