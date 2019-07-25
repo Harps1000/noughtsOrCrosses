@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.square0 {
+  grid-area: grid1;
+  border: 1px solid black;
+}
+
+.square1 {
+  grid-area: grid2;
+  border: 1px solid black;
+}
+
+.square2 {
+  grid-area: grid3;
+  border: 1px solid black;
+}
+
+.square3 {
+  grid-area: grid4;
+  border: 1px solid black;
+}
+
+.square4 {
+  grid-area: grid5;
+  border: 1px solid black;
+}
+
+.square5 {
+  grid-area: grid6;
+  border: 1px solid black;
+}
+
+.square6 {
+  grid-area: grid7;
+  border: 1px solid black;
+}
+.square7 {
+  grid-area: grid8;
+  border: 1px solid black;
+}
+.square8 {
+  grid-area: grid9;
+  border: 1px solid black;
+}
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas: 
+    "grid1 grid2 grid3"
+    "grid4 grid5 grid6"
+    "grid7 grid8 grid9";
+}
+
+.nought{
+  background-image:url('https://wordgeeks.files.wordpress.com/2012/09/zero1.jpg');
+  background-size: contain;
+}
+
+.cross{
+  background-image:url('https://www.sccpre.cat/mypng/full/0-5770_red-cross-transparent-png-red-cross-no-background.png');
+  background-size: contain;
+}
